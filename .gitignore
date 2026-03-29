@@ -1,0 +1,12 @@
+build/
+*.pem
+*.key
+*.crt
+*.log
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+test_mdp_core
+Testing/
