@@ -10,3 +10,4 @@ build/
 *~
 test_mdp_core
 Testing/
+examples/rust-client/target/

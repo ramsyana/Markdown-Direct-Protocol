@@ -54,6 +54,10 @@ endif()
 
 
 
+add_executable(bench_mdp benchmarks/bench_mdp.c)
+target_link_libraries(bench_mdp PRIVATE mdp_core)
+set_target_properties(bench_mdp PROPERTIES EXCLUDE_FROM_ALL TRUE)
+
 if (MDP_WARNINGS_AS_ERRORS)
     if (CMAKE_C_COMPILER_ID MATCHES "Clang|GNU")
         target_compile_options(mdp_core PRIVATE -Wall -Wextra -Werror)
